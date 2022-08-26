@@ -37,52 +37,18 @@ public class OrdenaValoresArray {
         Scanner scanner = new Scanner(System.in);
 
         char desejaContinuar = 's';
-        ArrayList<Integer> numerosEmOrdemCrescente = new ArrayList<Integer>();
+        ArrayList<Integer> lista = new ArrayList<Integer>();
 
         while (desejaContinuar == 's' || desejaContinuar == 'S') {
             System.out.print("Informe um número inteiro: ");
             int num = scanner.nextInt();
 
-            numerosEmOrdemCrescente.add(num);
+            lista.add(num);
 
             System.out.print("Deseja continuar: ");
             desejaContinuar = scanner.next().charAt(0);
         }
         
-
-        /* int nPosterior = 0;
-        int nAtual = 0; */
-        ArrayList<Integer> exampleList = new ArrayList<Integer>();
-        exampleList.add(5);
-        exampleList.add(4);
-        exampleList.add(7);
-        exampleList.add(2);
-
-        System.out.println(ordenaValores(exampleList));
-
-        /* for (int i = 0; i < exampleList.size(); i++) {
-            if (i != exampleList.size()-1) {
-                for (int j = 0; j < exampleList.size(); j++) {
-                    if (j != exampleList.size()-1) {
-                        nAtual = exampleList.get(j);
-                        nPosterior = exampleList.get(j+1); 
-        
-                        if (nAtual > nPosterior) {
-                            exampleList.set(j, nPosterior);
-                            exampleList.set(j + 1, nAtual);
-                            System.out.println(nAtual + " é maior que " + nPosterior);
-                        } else {
-                            System.out.println(nAtual + " é menor que " + nPosterior);
-                        }
-        
-                        System.out.println(nAtual);
-                        System.out.println(nPosterior);
-                        System.out.println(exampleList);
-                    }
-                }
-            }
-        }   */  
-
-        //System.out.println(exampleList);
+        System.out.println(ordenaValores(lista));
     }
 }
