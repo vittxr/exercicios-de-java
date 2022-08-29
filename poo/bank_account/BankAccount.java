@@ -1,5 +1,3 @@
-package poo.bank_account;
-
 import java.util.Arrays;
 import java.util.List;
 
